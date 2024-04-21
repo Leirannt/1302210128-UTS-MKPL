@@ -19,6 +19,7 @@ public class TaxFunction {
 	 * 
 	 */
 
+	// long parameter list & conditional complexity
 	public static int calculateTax(int monthlySalary, int otherMonthlyIncome, int numberOfMonthWorking, int deductible,
 			boolean isMarried, int numberOfChildren) {
 
