@@ -100,8 +100,7 @@ public class Employee {
 	}
 
 	public void addChild(String childName, String childIdNumber) {
-		childNames.add(childName);
-		childIdNumbers.add(childIdNumber);
+		childrens.add(new child(childName, childIdNumber));
 	}
 
 	public int getAnnualIncomeTax() {
@@ -117,6 +116,6 @@ public class Employee {
 		}
 
 		return TaxFunction.calculateTax(monthlySalary, otherMonthlyIncome, monthWorkingInYear, annualDeductible,
-				spouseIdNumber.equals(""), childIdNumbers.size());
+				spouseIdNumber.equals(""), childrens.size());
 	}
 }
