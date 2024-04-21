@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.jar.Attributes.Name;
 
 public class Employee {
 
@@ -29,8 +30,17 @@ public class Employee {
 	private String spouseIdNumber;
 
 	// data clumps
-	private List<String> childNames;
-	private List<String> childIdNumbers;
+	private List<child> childrens;
+
+	public class child {
+		private String Name;
+		private String Number;
+
+		public child(String Name, String Number) {
+			this.Name = Name;
+			this.Number = Number;
+		}
+	}
 
 	// long parameter list¯\_(ツ)_/¯
 	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address,
@@ -46,8 +56,7 @@ public class Employee {
 		this.isForeigner = isForeigner;
 		this.gender = gender;
 
-		childNames = new LinkedList<String>();
-		childIdNumbers = new LinkedList<String>();
+		childrens = new LinkedList<>();
 	}
 
 	/**
