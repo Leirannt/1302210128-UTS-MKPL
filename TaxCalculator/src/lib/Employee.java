@@ -42,7 +42,6 @@ public class Employee {
 		}
 	}
 
-	// long parameter list¯\_(ツ)_/¯
 	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address,
 			int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, boolean gender) {
 		this.employeeId = employeeId;
@@ -66,7 +65,7 @@ public class Employee {
 	 * Jika pegawai adalah warga negara asing gaji bulanan diperbesar sebanyak 50%
 	 */
 
-	// future envy
+	// feature envy
 	public void setMonthlySalary(int grade) {
 		if (grade == 1) {
 			monthlySalary = 3000000;
